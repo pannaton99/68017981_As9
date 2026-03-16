@@ -1,8 +1,8 @@
 body{
-    margin:0;
-    font-family: Arial;
+margin:0;
+font-family: Arial, sans-serif;
+background: linear-gradient(to bottom, #eeeeee, #d6d6d6);
 }
-
 /* Navbar */
 nav{
     background:#7a4a45;
@@ -90,10 +90,7 @@ gap:30px;
 .movie-card{
 background:white;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
-width:200px;
-overflow:hidden;
-transition:0.3s;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
 }
 
 .movie-card img{
@@ -233,6 +230,7 @@ width:100%;
 height:100%;
 background:rgba(0,0,0,0.7);
 }
+
 .footer{
 background:#1f2933;
 color:white;
@@ -252,7 +250,7 @@ padding:40px;
 text-align:center;
 }
 
-.contact-form{
+.contact form{
 max-width:500px;
 margin:auto;
 display:flex;
@@ -260,18 +258,40 @@ flex-direction:column;
 gap:10px;
 }
 
-.contact-form input,
-.contact-form textarea{
+.contact input,
+.contact textarea{
 padding:10px;
 border:1px solid #ccc;
 border-radius:5px;
 }
 
-.contact-form button{
-background:#28a745;
+.contact button{
+background:green;
 color:white;
 padding:10px;
 border:none;
 border-radius:5px;
 cursor:pointer;
+}
+.about{
+padding:40px;
+text-align:center;
+max-width:800px;
+margin:auto;
+}
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+
+.modal-content{
+background:white;
+width:400px;
+margin:10% auto;
+padding:20px;
 }
