@@ -1,0 +1,277 @@
+body{
+    margin:0;
+    font-family: Arial;
+}
+
+/* Navbar */
+nav{
+    background:#7a4a45;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 40px;
+    nav{
+background:#7a4a45;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 40px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+.menu a{
+    color:white;
+    text-decoration:none;
+}
+
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+/* Banner */
+.banner{
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), 
+    url("https://preview.redd.it/my-new-4k-desktop-wallpaper-v0-6pie0a0lg1v61.jpg?auto=webp&s=9a8c5f21247e838352404ce502bd577d241a59ca");
+
+  background-size:cover;
+    background-position:center 40%;
+
+    color:white;
+    font-size:40px;
+    text-align:center;
+}
+.banner h1{
+text-shadow:2px 2px 10px rgba(0,0,0,0.7);
+}
+.logo{
+color:white;
+font-size:20px;
+font-weight:bold;
+}
+
+.menu li{
+cursor:pointer;
+}
+.banner h1{
+text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+.movies{
+padding:40px;
+text-align:center;
+}
+
+.movies h2{
+font-size:32px;
+margin-bottom:30px;
+}
+
+.movie-container{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.movie-card{
+background:white;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+width:200px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.movie-card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.movie-card h3{
+padding:10px;
+}
+
+.movie-card:hover{
+transform:scale(1.05);
+}
+/* จัดเมนูให้อยู่แถวเดียว */
+.menu{
+list-style:none;
+display:flex;
+gap:30px;
+margin:0;
+padding:0;
+}
+
+/* ลบสีน้ำเงินลิงก์ */
+.menu a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+/* dropdown */
+.dropdown{
+position:relative;
+}
+
+.dropdown-menu{
+display:none;
+position:absolute;
+top:35px;
+right:0;
+background:white;
+list-style:none;
+padding:10px 0;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+min-width:220px;
+}
+
+/* item ใน dropdown */
+.dropdown-menu li{
+padding:10px 15px;
+}
+
+.dropdown-menu li a{
+color:black;
+display:block;
+}
+
+/* hover */
+.dropdown-menu li:hover{
+background:#f2f2f2;
+}
+
+/* แสดง dropdown */
+.dropdown:hover .dropdown-menu{
+display:block;
+}
+.menu-toggle{
+    font-size:26px;
+    color:white;
+    cursor:pointer;
+    display:block;
+}
+.movie-container{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.movie-card{
+width:200px;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-align:center;
+transition:0.3s;
+}
+
+.movie-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.movie-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+.movie-card button{
+background:#7a4a45;
+color:white;
+border:none;
+padding:8px 14px;
+margin:10px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.movie-card button:hover{
+background:#5c3531;
+}
+.banner{
+background:url('https://preview.redd.it/my-new-4k-desktop-wallpaper-v0-6pie0a0lg1v61.jpg?auto=webp&s=9a8c5f21247e838352404ce502bd577d241a59ca') center/cover;
+height:350px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.banner h1{
+background:rgba(0,0,0,0.4);
+padding:20px 40px;
+border-radius:10px;
+}
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+.footer{
+background:#1f2933;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.social{
+margin-top:10px;
+}
+
+.social img{
+margin:0 10px;
+}
+.contact{
+padding:40px;
+text-align:center;
+}
+
+.contact-form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.contact-form button{
+background:#28a745;
+color:white;
+padding:10px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
